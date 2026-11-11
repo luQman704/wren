@@ -1,0 +1,111 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── One Dark (default) ─────────────────────────────────────── */
+:root,
+[data-theme="one-dark"] {
+  --bg-app:        #282c34;
+  --bg-sidebar:    #21252b;
+  --bg-tabs:       #21252b;
+  --bg-tab-active: #282c34;
+  --bg-tab-hover:  #2c313a;
+  --bg-input:      #1d2026;
+  --bg-terminal:   #1c1f26;
+  --bg-term-header:#191c23;
+
+  --text:          #abb2bf;
+  --text-dim:      #636d83;
+  --text-muted:    #4b5263;
+
+  --border:        #181a1f;
+  --border-light:  #2a2f3a;
+
+  --accent:        #61afef;
+  --accent-dim:    #264f7a;
+
+  --hover-bg:      rgba(255,255,255,0.06);
+  --hover-bg-btn:  rgba(255,255,255,0.10);
+
+  --statusbar-bg:       #21252b;
+  --statusbar-text:     rgba(255,255,255,0.85);
+  --statusbar-text-dim: rgba(255,255,255,0.45);
+
+  --tab-height:    36px;
+  --sidebar-width: 220px;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  font-size: 13px;
+  color: var(--text);
+  background: var(--bg-app);
+}
+
+/* ── GitHub Light ───────────────────────────────────────────── */
+[data-theme="github-light"] {
+  --bg-app:        #ffffff;
+  --bg-sidebar:    #f6f8fa;
+  --bg-tabs:       #f0f2f5;
+  --bg-tab-active: #ffffff;
+  --bg-tab-hover:  #e8ecf0;
+  --bg-input:      #ffffff;
+  --bg-terminal:   #1c1f26;
+  --bg-term-header:#191c23;
+
+  --text:          #24292f;
+  --text-dim:      #57606a;
+  --text-muted:    #6e7781;
+
+  --border:        #d0d7de;
+  --border-light:  #d8dee4;
+
+  --accent:        #0969da;
+  --accent-dim:    #c8d8f8;
+
+  --hover-bg:      rgba(0,0,0,0.05);
+  --hover-bg-btn:  rgba(0,0,0,0.08);
+
+  --statusbar-bg:       #1f2328;
+  --statusbar-text:     rgba(255,255,255,0.90);
+  --statusbar-text-dim: rgba(255,255,255,0.55);
+}
+
+/* ── Tokyo Night ────────────────────────────────────────────── */
+[data-theme="tokyo-night"] {
+  --bg-app:        #1a1b26;
+  --bg-sidebar:    #16161e;
+  --bg-tabs:       #16161e;
+  --bg-tab-active: #1a1b26;
+  --bg-tab-hover:  #1f2335;
+  --bg-input:      #13131a;
+  --bg-terminal:   #13131a;
+  --bg-term-header:#0f0f17;
+
+  --text:          #c0caf5;
+  --text-dim:      #565f89;
+  --text-muted:    #414868;
+
+  --border:        #292e42;
+  --border-light:  #343b58;
+
+  --accent:        #7aa2f7;
+  --accent-dim:    #283457;
+
+  --hover-bg:      rgba(255,255,255,0.05);
+  --hover-bg-btn:  rgba(255,255,255,0.09);
+
+  --statusbar-bg:       #0f0f17;
+  --statusbar-text:     rgba(255,255,255,0.85);
+  --statusbar-text-dim: rgba(255,255,255,0.45);
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
